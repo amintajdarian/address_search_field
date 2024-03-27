@@ -2,8 +2,8 @@ part of 'package:address_search_field/src/services/geo_methods.dart';
 
 Future<Map<String, dynamic>> _httpClient(Uri uri) async {
   final baseOptions = BaseOptions(
-    connectTimeout: Duration.secondsPerMinute,
-    receiveTimeout: Duration.secondsPerMinute,
+    connectTimeout: Duration(seconds: 5),
+    receiveTimeout: Duration(seconds: 5),
     contentType: 'application/json',
     responseType: ResponseType.json,
   );
